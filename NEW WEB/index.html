@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday My Love</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 Happy Birthday, My Love! 🎂</h1>
+    <img src="/1727714407721.jpg" alt="Happy Birthday" class="birthday-img" />
+    <p>
+      Tumhari muskaan meri duniya hai ❤️<br/>
+      Har din tumhari khushi ke liye dua karta hoon.<br/>
+      Aaj ka din tumhari zindagi ka sabse khoobsurat din ho!<br/>
+      I Love You 💖
+    </p>
+  </div>
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="birthday.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Confetti Animation -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    function throwConfetti() {
+      confetti({
+        particleCount: 150,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+    }
+    setInterval(throwConfetti, 3000);
+    throwConfetti();
+  </script>
+</body>
+</html>
